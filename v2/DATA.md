@@ -82,9 +82,7 @@ KITTI 官方站点重新下载并预处理。
 ```
 navstack/     库代码，每个主题一个模块（lio.py / graph.py / imu.py / store.py /
               levels.py / vision.py / relocal.py / nav.py）
-scripts/      可执行入口，每阶段一个 + 六个诊断脚本
-configs/      参数
-tests/        单元测试
+scripts/      可执行入口，每阶段一个 + 八个诊断/调参脚本
 docs/RESULTS.md   完整方法与结果说明（含 13 条失败与教训）
 ```
 
@@ -105,11 +103,14 @@ numpy 2.5.3、OpenCV 5.0.0、scipy；GPU 为 NVIDIA GB10（DGX Spark）。
 
 ### 复现状态（如实记录，2026-11-15）
 
-`run_all.py` 全链在一次完整运行中 **stage1 / stage2 / stage4 / stage6 与两段可视化全部通过**；
-**stage3 与 stage5 当次失败**，原因是同机其它负载占满内存（116/121 GB，swap 已满），
-连 CUDA 上下文都无法创建（`cuDevicePrimaryCtxRetain` OOM），与本研究代码无关。
-这两个阶段的 `results/*.json` 来自同机内存空闲时的成功运行，代码此后未修改。
-当内存压力解除后重跑同一命令即可复现。
+`run_all.py` 全链**六个阶段与两段可视化全部通过，退出码 0**，各阶段耗时：
+stage1 11.0 s / stage2 17.1 s / stage3 69.2 s / stage4 18.2 s / stage5 392.9 s /
+stage6 13.5 s / viz_web 4.9 s / viz_video 20.0 s。
+
+首轮整链运行时 stage3 与 stage5 曾失败，原因是同机其它负载占满内存（116/121 GB，swap 已满），
+连 CUDA 上下文都无法创建（`cuDevicePrimaryCtxRetain` OOM），与本研究代码无关；内存缓解后
+用 `run_all.py --only stage3_vision,stage5_relocal` 重跑即通过。记录这条是因为
+"能跑通"和"在什么条件下跑通"是两件事。
 
 ---
 
