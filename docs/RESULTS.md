@@ -38,7 +38,7 @@
 
 - 光栅化不用 open3d/matplotlib，直接用 PyTorch 写 z-buffer：投影 → 像素索引 → `scatter_reduce_(reduce="amin")` 求每像素最近深度 → 只有"拥有自己像素"的点上色。遮挡是正确解出来的，不是画家算法排序近似。
 - 3D 视图 2× 超采样后按 2×2 splat，再 `INTER_AREA` 降采样回 900×720。1 像素点在这个密度下看起来就是噪点，事后放大又会把不同深度的颜色糊在一起，所以必须在 z-buffer 之前 splat。
-- 全量 305 万点连续光栅化 25 s：平均 90.4 %、峰值 93 % 利用率，2.47 亿点/秒（`results/gpu_stress.json`）。
+- 全量 305 万点连续光栅化 25 s：平均 89.6 %、峰值 93 % 利用率，2.42 亿点/秒（`results/gpu_stress.json`）。
 
 ## 4. 复现性
 

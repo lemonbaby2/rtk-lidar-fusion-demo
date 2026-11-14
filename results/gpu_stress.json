@@ -1,9 +1,9 @@
 {
   "seconds": 25.3,
-  "frames": 2046,
+  "frames": 2005,
   "points_per_frame": 3054009,
-  "raster_points_per_second": 247254704,
-  "gpu_util_mean_pct": 90.4,
+  "raster_points_per_second": 242460733,
+  "gpu_util_mean_pct": 89.6,
   "gpu_util_max_pct": 93,
-  "samples": 85
+  "samples": 84
 }

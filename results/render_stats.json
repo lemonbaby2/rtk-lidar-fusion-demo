@@ -8,8 +8,8 @@
   "render_seconds": 5.5,
   "seconds_per_frame": 0.036,
   "gpu_util_samples": 20,
-  "gpu_util_mean_pct": 13.8,
-  "gpu_util_max_pct": 18,
+  "gpu_util_mean_pct": 14.1,
+  "gpu_util_max_pct": 20,
   "video": "/home/nvidia/rtk_fusion_demo/out/fusion_demo.mp4",
-  "video_mb": 20.8
+  "video_mb": 19.03
 }
