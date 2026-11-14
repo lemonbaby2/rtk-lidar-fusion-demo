@@ -1,0 +1,23 @@
+{
+  "frames": 154,
+  "points_per_frame": 20000,
+  "global_points": 3054009,
+  "map_points_voxel15cm": 1253018,
+  "path_length_m": 69.38370079849828,
+  "ate_odo_mean_m": 0.6110267811298739,
+  "ate_odo_final_m": 1.195975852757182,
+  "ate_fused_mean_m": 0.07495576077320057,
+  "ate_fused_final_m": 0.0004923335480015492,
+  "improvement_pct": 87.73281906979643,
+  "rtk_dropout_frames": [
+    40,
+    90
+  ],
+  "icp_median_nn_m": 0.1272682398557663,
+  "device": "NVIDIA GB10",
+  "odometry": "frame-to-frame point-to-point ICP, constant-velocity init, no RTK",
+  "fusion": "translation pose graph, odometry relative + RTK absolute, lstsq",
+  "rotation_source": "RTK/INS relative orientation for the map rebuild; the pose graph itself solves translation only",
+  "alignment": "odometry chain rotated into the RTK world frame with the frame-0 INS orientation before any error is computed",
+  "gpu_seconds": 18.7
+}

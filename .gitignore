@@ -1,0 +1,19 @@
+# data and intermediates are never committed
+raw/
+data/
+out/
+frames/
+*.npy
+*.npz
+*.zip
+*.part[0-9][0-9][0-9][0-9]
+fetch.log
+
+# keep the small published artefacts
+!media/*.mp4
+!media/*.png
+!results/*.json
+
+__pycache__/
+*.pyc
+.DS_Store

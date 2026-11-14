@@ -1,0 +1,15 @@
+{
+  "frames": 154,
+  "fps": 20,
+  "resolution": [
+    1280,
+    720
+  ],
+  "render_seconds": 5.5,
+  "seconds_per_frame": 0.036,
+  "gpu_util_samples": 20,
+  "gpu_util_mean_pct": 13.8,
+  "gpu_util_max_pct": 18,
+  "video": "/home/nvidia/rtk_fusion_demo/out/fusion_demo.mp4",
+  "video_mb": 20.8
+}
