@@ -4,6 +4,27 @@
 
 A small, honest reference implementation: LiDAR odometry from frame-to-frame ICP, an RTK/INS translation pose graph on top of it, a simulated RTK outage to show what the absolute constraint is worth, and a GPU z-buffer renderer that turns the fused coloured map into an MP4.
 
+## 数据可用性声明 / Data Availability
+
+本仓库同时是本研究的**数据与代码存储库**，论文中每一个数字都可以在仓库内按字段复查：
+
+| 你在找什么 | 去哪里 |
+|---|---|
+| **第二版实验（LiDAR+RTK+IMU 六主题完整栈）** | [`v2/`](v2/) —— 论文对应的实现 |
+| **全部定量结果**（JSON，数字的唯一来源） | [`v2/results/`](v2/results/) |
+| **数据清单：每个文件对应文中哪张表** | [`v2/DATA.md`](v2/DATA.md) |
+| **自包含可视化查看器**（双击即开，无需服务器） | [`v2/web/index.html`](v2/web/index.html) |
+| **演示视频**（BEV + 前视相机） | [`v2/media/navstack_v2.mp4`](v2/media/navstack_v2.mp4) |
+| **失败与教训记录**（13 条，含被证伪的假设） | [`v2/docs/RESULTS.md`](v2/docs/RESULTS.md) |
+
+原始数据为 **KITTI raw `2011_09_26_drive_0005`**（CC BY-NC-SA 3.0，仅限非商业用途）。
+该许可不允许再分发原始传感器数据，因此仓库**不包含**原始点云与图像；用
+`v2/scripts/prep.py` 从 KITTI 官方站点下载后可完整重建（细节见 [`v2/DATA.md`](v2/DATA.md) 第 5 节）。
+
+代码许可：MIT。引用方式见 [`v2/DATA.md`](v2/DATA.md) 第 6 节。
+
+---
+
 ## 这个仓库是什么 / 不是什么
 
 **是**

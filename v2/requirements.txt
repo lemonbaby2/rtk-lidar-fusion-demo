@@ -1,0 +1,10 @@
+# Python 3.12. Verified on an NVIDIA DGX Spark (GB10, CUDA 13) with:
+#   numpy 2.5.3, torch 2.14.0+cu130, torchvision 0.29.0, gtsam 4.3.0,
+#   opencv 5.0.0, scipy 1.18.1, pillow 11.x
+numpy>=2.0
+torch>=2.4
+torchvision>=0.19          # Mask R-CNN weights, downloaded on first use
+gtsam>=4.2                 # pip install gtsam; aarch64 wheels exist for 4.3.0
+opencv-python>=4.9
+scipy>=1.11                # distance transform for costmap inflation
+pillow>=10.0

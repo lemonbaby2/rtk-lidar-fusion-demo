@@ -1,0 +1,19 @@
+{
+  "steps": 153,
+  "rotation_diff_deg": {
+    "median": 0.1025,
+    "p95": 0.2438,
+    "max": 1.0649
+  },
+  "translation_diff_m": {
+    "median": 0.11236,
+    "p95": 0.12751
+  },
+  "gravity_free_step_m": {
+    "median": 0.06446
+  },
+  "imu_dp_over_gravity_free_step": 0.8204,
+  "corr_error_vs_step": 0.685,
+  "corr_error_vs_gyro": 0.103,
+  "verdict": "consistent within about 25 %; any residual problem is in weighting"
+}

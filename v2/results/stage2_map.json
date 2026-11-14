@@ -1,0 +1,108 @@
+{
+  "map_dir": "/home/nvidia/rtk_fusion_demo/navstack_v2/out/drive0005.navmap",
+  "keyframes": 154,
+  "write": {
+    "keyframes": 154,
+    "keyframe_ms_mean": 12.61,
+    "keyframe_ms_p95": 14.9,
+    "keyframe_ms_max": 30.71,
+    "keyframe_bytes_total": 36382331,
+    "disk_total": 38128302,
+    "flush_calls": 4,
+    "flush_ms_mean": 355.8,
+    "flush_ms_total": 1423.1,
+    "flush_files": 138,
+    "total_s": 4.92,
+    "frame_period_s": 0.1033
+  },
+  "read": {
+    "coarse": {
+      "region_points_median": 2794.0,
+      "region_ms_median": 0.09,
+      "region_ms_p95": 0.6,
+      "region_chunks_median": 6.0,
+      "full_points": 23289,
+      "full_ms": 704.36,
+      "point_ratio_pct": 11.997,
+      "time_ratio_pct": 0.013
+    },
+    "mid": {
+      "region_points_median": 12730.0,
+      "region_ms_median": 0.34,
+      "region_ms_p95": 1.35,
+      "region_chunks_median": 6.0,
+      "full_points": 137691,
+      "full_ms": 729.26,
+      "point_ratio_pct": 9.245,
+      "time_ratio_pct": 0.047
+    },
+    "fine": {
+      "region_points_median": 34935.0,
+      "region_ms_median": 0.87,
+      "region_ms_p95": 3.36,
+      "region_chunks_median": 6.0,
+      "full_points": 465269,
+      "full_ms": 741.75,
+      "point_ratio_pct": 7.509,
+      "time_ratio_pct": 0.117
+    }
+  },
+  "cache_warm": {
+    "entries": 30,
+    "bytes": 1941045,
+    "hits": 143,
+    "misses": 98,
+    "evictions": 0,
+    "hit_rate": 0.593
+  },
+  "cache_cold": {
+    "coarse": {
+      "ms_median": 0.86,
+      "io_ms_median": 0.73,
+      "points_median": 3336.0
+    },
+    "mid": {
+      "ms_median": 2.3,
+      "io_ms_median": 1.86,
+      "points_median": 18423.0
+    },
+    "fine": {
+      "ms_median": 6.07,
+      "io_ms_median": 4.72,
+      "points_median": 65040.0
+    }
+  },
+  "chunks_are_derived": {
+    "rebuilt": {
+      "chunks": 15,
+      "files": 45,
+      "ms": 986.5,
+      "bytes": 5350974,
+      "total_ms": 1352.9
+    },
+    "points_before": 8310,
+    "points_after": 8310,
+    "identical": true
+  },
+  "recovery": {
+    "manifest_before": 92,
+    "keyframes_after": 154,
+    "recovered": 62,
+    "expected_missing": 62,
+    "exact": true
+  },
+  "schema_guard": {
+    "refused_newer_schema": true,
+    "message": "map schema 99 != reader 2; this reader refuses to open a map it may mis-index"
+  },
+  "config": {
+    "chunk_size_m": 30.0,
+    "buffer_m": 5.0,
+    "lod_leaf_m": {
+      "coarse": 1.0,
+      "mid": 0.4,
+      "fine": 0.2
+    },
+    "radius_m": 30.0
+  }
+}

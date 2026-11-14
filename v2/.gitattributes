@@ -1,0 +1,4 @@
+# 二进制产物不做行尾转换
+*.png binary
+*.mp4 binary
+*.jpg binary

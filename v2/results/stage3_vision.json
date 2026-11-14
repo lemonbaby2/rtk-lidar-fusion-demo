@@ -1,0 +1,348 @@
+{
+  "frames": 154,
+  "dynamic_mask": {
+    "model": "torchvision maskrcnn_resnet50_fpn_v2 (COCO), score>=0.55",
+    "movable_classes": [
+      "person",
+      "bicycle",
+      "car",
+      "motorcycle",
+      "bus",
+      "truck"
+    ],
+    "frames_with_instance": 154,
+    "instance_detection_rate": 1.0,
+    "instances_total": 2239,
+    "instances_per_frame_mean": 14.539,
+    "mask_pixel_frac_mean": 0.1001,
+    "lidar_point_frac_mean": 0.0299,
+    "lidar_point_frac_p95": 0.05565,
+    "ms_per_frame_mean": 746.1,
+    "ms_total": 117.0,
+    "registration": {
+      "pairs": 24,
+      "rmse_all_median": 0.0839,
+      "rmse_masked_median": 0.0824,
+      "rmse_improve_pct": 1.83,
+      "inliers_all_median": 1495.0,
+      "inliers_masked_median": 1514.0,
+      "rmse_all": [
+        0.0811,
+        0.0864,
+        0.083,
+        0.0857,
+        0.0909,
+        0.0795,
+        0.0748,
+        0.0766,
+        0.0764,
+        0.0793,
+        0.0883,
+        0.0866,
+        0.0884,
+        0.0902,
+        0.0894,
+        0.0902,
+        0.0768,
+        0.0779,
+        0.0853,
+        0.0839,
+        0.0832,
+        0.0799,
+        0.0857,
+        0.084
+      ],
+      "rmse_masked": [
+        0.0772,
+        0.0839,
+        0.0853,
+        0.0829,
+        0.0889,
+        0.0826,
+        0.075,
+        0.0782,
+        0.0732,
+        0.0743,
+        0.0871,
+        0.086,
+        0.0866,
+        0.0923,
+        0.0899,
+        0.089,
+        0.0753,
+        0.0773,
+        0.0822,
+        0.0838,
+        0.0809,
+        0.0781,
+        0.081,
+        0.0788
+      ]
+    }
+  },
+  "stereo_vs_lidar": [
+    {
+      "frame": 72,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.8278,
+      "ms": 51.8,
+      "n": 2833,
+      "median_abs_m": 0.233,
+      "p90_abs_m": 2.436,
+      "median_rel_pct": 1.69,
+      "within_1m_pct": 79.28
+    },
+    {
+      "frame": 110,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.651,
+      "ms": 24.1,
+      "n": 2136,
+      "median_abs_m": 0.169,
+      "p90_abs_m": 2.727,
+      "median_rel_pct": 1.56,
+      "within_1m_pct": 79.21
+    },
+    {
+      "frame": 90,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.6612,
+      "ms": 17.7,
+      "n": 2464,
+      "median_abs_m": 0.214,
+      "p90_abs_m": 3.813,
+      "median_rel_pct": 1.78,
+      "within_1m_pct": 76.26
+    },
+    {
+      "frame": 141,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.6869,
+      "ms": 19.7,
+      "n": 2235,
+      "median_abs_m": 0.143,
+      "p90_abs_m": 1.504,
+      "median_rel_pct": 1.5,
+      "within_1m_pct": 85.5
+    },
+    {
+      "frame": 53,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.6798,
+      "ms": 38.4,
+      "n": 2285,
+      "median_abs_m": 0.552,
+      "p90_abs_m": 4.81,
+      "median_rel_pct": 3.21,
+      "within_1m_pct": 59.78
+    },
+    {
+      "frame": 147,
+      "baseline_m": 0.6304,
+      "focal_px": 609.7,
+      "valid_frac": 0.6848,
+      "ms": 41.2,
+      "n": 2102,
+      "median_abs_m": 0.164,
+      "p90_abs_m": 2.098,
+      "median_rel_pct": 1.54,
+      "within_1m_pct": 83.92
+    }
+  ],
+  "descriptor": {
+    "tiny": {
+      "dim": 512,
+      "recall_at_1": 0.7468,
+      "recall_at_5": 0.7792,
+      "median_5th_minus_1st_distance": 0.06733,
+      "median_nearest_distance": 0.0
+    },
+    "hsv": {
+      "dim": 144,
+      "recall_at_1": 0.9481,
+      "recall_at_5": 0.9805,
+      "median_5th_minus_1st_distance": 0.01011,
+      "median_nearest_distance": 0.0
+    }
+  },
+  "descriptor_protocol": {
+    "exclusion_frames": 10,
+    "tolerance_frames": 15,
+    "note": "leave-one-out with a temporal exclusion window: without it every query return. itself and recall is 100 % by construction"
+  },
+  "semantic_cost": [
+    {
+      "frame": 19,
+      "ground_z": -1.779,
+      "without_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          503,
+          610
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 80425,
+        "free_pct": 7.45,
+        "static_obstacle_pct": 1.21,
+        "dynamic_obstacle_pct": 0.0,
+        "unknown_pct": 91.34,
+        "observed_pct": 8.66,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.9
+      },
+      "with_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          503,
+          610
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 80425,
+        "free_pct": 7.45,
+        "static_obstacle_pct": 1.1,
+        "dynamic_obstacle_pct": 0.1,
+        "unknown_pct": 91.35,
+        "observed_pct": 8.65,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 3.8
+      }
+    },
+    {
+      "frame": 71,
+      "ground_z": -1.711,
+      "without_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          547,
+          550
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 80427,
+        "free_pct": 5.79,
+        "static_obstacle_pct": 1.61,
+        "dynamic_obstacle_pct": 0.0,
+        "unknown_pct": 92.6,
+        "observed_pct": 7.4,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.4
+      },
+      "with_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          547,
+          550
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 80427,
+        "free_pct": 5.79,
+        "static_obstacle_pct": 1.52,
+        "dynamic_obstacle_pct": 0.08,
+        "unknown_pct": 92.6,
+        "observed_pct": 7.4,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.6
+      }
+    },
+    {
+      "frame": 146,
+      "ground_z": -1.8,
+      "without_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          617,
+          386
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 66822,
+        "free_pct": 5.28,
+        "static_obstacle_pct": 1.8,
+        "dynamic_obstacle_pct": 0.0,
+        "unknown_pct": 92.92,
+        "observed_pct": 7.08,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.7
+      },
+      "with_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          617,
+          386
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 66822,
+        "free_pct": 5.28,
+        "static_obstacle_pct": 1.49,
+        "dynamic_obstacle_pct": 0.29,
+        "unknown_pct": 92.94,
+        "observed_pct": 7.06,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.6
+      }
+    },
+    {
+      "frame": 119,
+      "ground_z": -1.676,
+      "without_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          641,
+          310
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 79036,
+        "free_pct": 4.23,
+        "static_obstacle_pct": 1.31,
+        "dynamic_obstacle_pct": 0.0,
+        "unknown_pct": 94.46,
+        "observed_pct": 5.54,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.0
+      },
+      "with_dynamic": {
+        "res_m": 0.25,
+        "shape": [
+          641,
+          310
+        ],
+        "report_radius_m": 40.0,
+        "cells_in_disc": 79036,
+        "free_pct": 4.23,
+        "static_obstacle_pct": 1.21,
+        "dynamic_obstacle_pct": 0.1,
+        "unknown_pct": 94.47,
+        "observed_pct": 5.53,
+        "z_band_m": [
+          0.15,
+          2.0
+        ],
+        "ms": 2.1
+      }
+    }
+  ]
+}

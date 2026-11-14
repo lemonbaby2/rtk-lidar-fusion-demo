@@ -1,0 +1,140 @@
+{
+  "floor_gap_m_used_for_synthetic": 3.6,
+  "real": {
+    "keyframes": 154,
+    "levels_detected": 1,
+    "level_detail": [
+      {
+        "level": 0,
+        "z_ref": -1.715,
+        "z_min": -2.426,
+        "z_max": -0.126,
+        "keyframes": 154,
+        "points": 137691,
+        "lod": "mid",
+        "leaf_m": 0.4,
+        "bbox_min": [
+          -65.26000213623047,
+          -78.87999725341797,
+          -15.930000305175781
+        ],
+        "bbox_max": [
+          135.4600067138672,
+          90.6500015258789,
+          5.909999847412109
+        ]
+      }
+    ],
+    "minimap": {
+      "shape": [
+        205,
+        174
+      ],
+      "res_m": 1.0,
+      "origin": [
+        -67.26,
+        -80.88
+      ],
+      "occupied_cells": 7163,
+      "observed_cells": 9098,
+      "coverage_m2": 9098.0
+    },
+    "conclusion": "single storey: the segmenter correctly refuses to split a continuous ground profile"
+  },
+  "synthetic_duplex": {
+    "keyframes": 308,
+    "levels_detected": 2,
+    "level_detail": [
+      {
+        "level": 0,
+        "z_ref": -1.715,
+        "z_min": -2.426,
+        "z_max": -0.126,
+        "keyframes": 154,
+        "points": 137691,
+        "lod": "mid",
+        "leaf_m": 0.4,
+        "bbox_min": [
+          -65.26000213623047,
+          -78.87999725341797,
+          -15.930000305175781
+        ],
+        "bbox_max": [
+          135.4600067138672,
+          90.6500015258789,
+          5.909999847412109
+        ]
+      },
+      {
+        "level": 1,
+        "z_ref": 1.885,
+        "z_min": 1.174,
+        "z_max": 3.474,
+        "keyframes": 154,
+        "points": 137712,
+        "lod": "mid",
+        "leaf_m": 0.4,
+        "bbox_min": [
+          -82.63999938964844,
+          -72.83000183105469,
+          -12.329999923706055
+        ],
+        "bbox_max": [
+          118.08000183105469,
+          96.69999694824219,
+          9.390000343322754
+        ]
+      }
+    ],
+    "assignment_accuracy": 1.0,
+    "loads": {
+      "L0": {
+        "points": 137691,
+        "ms": 769.45,
+        "keyframes": 154
+      },
+      "L1": {
+        "points": 137712,
+        "ms": 756.92,
+        "keyframes": 154
+      },
+      "all": {
+        "points": 272973,
+        "ms": 1544.82,
+        "keyframes": 308
+      }
+    },
+    "level_load_saving_vs_all_pct": 49.55,
+    "note": "both floors are correct-by-construction; accuracy is a sanity check on the ground-height clustering, not an ML score"
+  },
+  "minimap_resolutions": {
+    "1.0": {
+      "shape": [
+        205,
+        174
+      ],
+      "res_m": 1.0,
+      "origin": [
+        -67.26,
+        -80.88
+      ],
+      "occupied_cells": 7163,
+      "observed_cells": 9098,
+      "coverage_m2": 9098.0
+    },
+    "0.5": {
+      "shape": [
+        406,
+        344
+      ],
+      "res_m": 0.5,
+      "origin": [
+        -66.26,
+        -79.88
+      ],
+      "occupied_cells": 20235,
+      "observed_cells": 29670,
+      "coverage_m2": 7417.5
+    }
+  }
+}

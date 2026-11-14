@@ -1,0 +1,177 @@
+{
+  "points": 3079295,
+  "ground_field": {
+    "res_m": 2.0,
+    "shape": [
+      104,
+      88
+    ],
+    "z_min": -2.361,
+    "z_max": 2.469
+  },
+  "band_pct_all_points": {
+    "old": 38.8,
+    "new": 66.9
+  },
+  "old_band_pct_below_new_floor": 1.1,
+  "dz_hist_edges": [
+    -3.0,
+    -1.5,
+    -1.0,
+    -0.5,
+    -0.2,
+    0.0,
+    0.1,
+    0.2
+  ],
+  "dz_hist_counts": [
+    441,
+    180,
+    2526,
+    7875,
+    60901,
+    429984,
+    325424
+  ],
+  "ego_cells": 154,
+  "ego_hits": {
+    "old": {
+      "mean": 9.2,
+      "median": 7.0,
+      "ge3_pct": 74.0,
+      "ge10_pct": 33.8
+    },
+    "new": {
+      "mean": 39.3,
+      "median": 44.0,
+      "ge3_pct": 87.7,
+      "ge10_pct": 81.2
+    }
+  },
+  "astar": {
+    "old_band_inflate_0.60": {
+      "cells": 551088,
+      "free_pct": 6.6,
+      "occ_pct": 7.1,
+      "inflation_effective_m": 0.75,
+      "ends": {
+        "start": {
+          "cell": [
+            255,
+            318
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        },
+        "goal": {
+          "cell": [
+            502,
+            350
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        }
+      },
+      "found": true,
+      "expanded": 3717,
+      "ms": 22.61,
+      "len_m": 71.9,
+      "clearance_m": 0.25
+    },
+    "old_band_inflate_0.00": {
+      "cells": 551088,
+      "free_pct": 10.2,
+      "occ_pct": 3.0,
+      "inflation_effective_m": null,
+      "ends": {
+        "start": {
+          "cell": [
+            255,
+            318
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        },
+        "goal": {
+          "cell": [
+            502,
+            350
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        }
+      },
+      "found": true,
+      "expanded": 5723,
+      "ms": 37.53,
+      "len_m": 69.4,
+      "clearance_m": 0.25
+    },
+    "ground_band_inflate_0.60": {
+      "cells": 553956,
+      "free_pct": 3.9,
+      "occ_pct": 10.5,
+      "inflation_effective_m": 0.75,
+      "ends": {
+        "start": {
+          "cell": [
+            255,
+            320
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        },
+        "goal": {
+          "cell": [
+            502,
+            351
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        }
+      },
+      "found": true,
+      "expanded": 2267,
+      "ms": 14.45,
+      "len_m": 72.0,
+      "clearance_m": 0.25
+    },
+    "ground_band_inflate_0.00": {
+      "cells": 553956,
+      "free_pct": 7.4,
+      "occ_pct": 6.5,
+      "inflation_effective_m": null,
+      "ends": {
+        "start": {
+          "cell": [
+            255,
+            320
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        },
+        "goal": {
+          "cell": [
+            502,
+            351
+          ],
+          "grid": 1,
+          "raw": 1,
+          "passable_nb": 8
+        }
+      },
+      "found": true,
+      "expanded": 3201,
+      "ms": 22.23,
+      "len_m": 72.0,
+      "clearance_m": 0.25
+    }
+  }
+}

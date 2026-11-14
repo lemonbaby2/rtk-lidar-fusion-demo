@@ -2,7 +2,7 @@
 raw/
 data/
 out/
-frames/
+/frames/
 *.npy
 *.npz
 *.zip
@@ -13,6 +13,7 @@ fetch.log
 !media/*.mp4
 !media/*.png
 !results/*.json
+!v2/media/frames/*.png
 
 __pycache__/
 *.pyc

@@ -1,0 +1,243 @@
+{
+  "dataset": {
+    "frames": 154,
+    "max_points_per_frame": 20000,
+    "range_limit_m": 80.0,
+    "duration_s": 15.79964303970337,
+    "path_length_m": 69.43056249335534,
+    "imu_hz": 100.0,
+    "imu_samples": 1648,
+    "stereo_baseline_m": 0.5327,
+    "grey_point_fraction": 0.8347,
+    "source": "KITTI raw 2011_09_26_drive_0005 (CC BY-NC-SA 3.0)",
+    "sensors": "Velodyne HDL-64E, cameras 02+03, OXTS RT3003 GNSS/INS (RTK-grade)",
+    "frame0": "IMU body frame at frame 0; x = travel direction from the first RTK baseline",
+    "gravity_frame0": [
+      0.0,
+      0.0,
+      -9.80665
+    ],
+    "projection": "X_img = P_rect_0{2,3} @ R_rect_00 @ Tr_velo_to_cam @ X_velo",
+    "colour_note": "grey(110,110,110) = point fell in neither colour camera"
+  },
+  "frames": 154,
+  "config": {
+    "lio_sigma_rot": 0.01,
+    "lio_sigma_xy": 0.06,
+    "lio_sigma_z": 0.12,
+    "rtk_sigma_xy": 0.15,
+    "rtk_sigma_z": 0.35,
+    "rtk_huber_k": 1.5,
+    "imu_acc_sigma": 0.6,
+    "imu_gyro_sigma": 0.01,
+    "imu_hz": 100.0,
+    "outage": [
+      40,
+      90
+    ],
+    "longgap": [
+      30,
+      120
+    ],
+    "degen": [
+      60,
+      90
+    ],
+    "frame0_tilt_estimates_deg": {
+      "whole_stream": 0.719,
+      "first_20": 4.288,
+      "quietest_window": 7.039
+    }
+  },
+  "ablation": [
+    {
+      "name": "dead_reckon",
+      "ate_mean_m": 1.1459,
+      "ate_final_m": 2.4939,
+      "ate_rmse_m": 1.2706,
+      "rpe1_m": 0.0373,
+      "rpe5_m": 0.1446,
+      "factors": {},
+      "converged": true,
+      "iterations": 0,
+      "graph_error_initial": 0.0,
+      "graph_error_final": 0.0,
+      "notes": "cumulative product of LIO increments",
+      "ate_in_outage_m": 0.9823,
+      "ate_out_of_outage_m": 1.2246
+    },
+    {
+      "name": "graph_lio",
+      "ate_mean_m": 1.1458,
+      "ate_final_m": 2.4942,
+      "ate_rmse_m": 1.2705,
+      "rpe1_m": 0.0373,
+      "rpe5_m": 0.1447,
+      "factors": {
+        "prior_pose": 1,
+        "lio_between": 153
+      },
+      "converged": true,
+      "iterations": 1,
+      "graph_error_initial": 0.0,
+      "graph_error_final": 0.0,
+      "notes": "pose graph, LIO between factors only",
+      "ate_in_outage_m": 0.9822,
+      "ate_out_of_outage_m": 1.2245
+    },
+    {
+      "name": "graph_lio_rtk",
+      "ate_mean_m": 0.0759,
+      "ate_final_m": 0.0235,
+      "ate_rmse_m": 0.1259,
+      "rpe1_m": 0.0239,
+      "rpe5_m": 0.0481,
+      "factors": {
+        "prior_pose": 1,
+        "lio_between": 153,
+        "rtk": 104
+      },
+      "converged": true,
+      "iterations": 3,
+      "graph_error_initial": 1050.51,
+      "graph_error_final": 8.630411,
+      "notes": "RTK translation prior, Huber k=1.5, gap frames 40-90",
+      "ate_in_outage_m": 0.1923,
+      "ate_out_of_outage_m": 0.02
+    },
+    {
+      "name": "graph_full",
+      "ate_mean_m": 0.0862,
+      "ate_final_m": 0.0308,
+      "ate_rmse_m": 0.1229,
+      "rpe1_m": 0.0329,
+      "rpe5_m": 0.0633,
+      "factors": {
+        "prior_pose": 1,
+        "prior_vel": 1,
+        "prior_bias": 1,
+        "lio_between": 153,
+        "imu": 153,
+        "bias_rw": 153,
+        "rtk": 104
+      },
+      "converged": true,
+      "iterations": 4,
+      "graph_error_initial": 319756.67,
+      "graph_error_final": 55.387909,
+      "notes": "adds ImuFactor, acc 0.6 gyro 0.01",
+      "ate_in_outage_m": 0.1948,
+      "ate_out_of_outage_m": 0.034
+    },
+    {
+      "name": "graph_imu_only",
+      "ate_mean_m": 0.9764,
+      "ate_final_m": 1.9017,
+      "ate_rmse_m": 1.0631,
+      "rpe1_m": 0.0426,
+      "rpe5_m": 0.1434,
+      "factors": {
+        "prior_pose": 1,
+        "prior_vel": 1,
+        "prior_bias": 1,
+        "lio_between": 153,
+        "imu": 153,
+        "bias_rw": 153
+      },
+      "converged": true,
+      "iterations": 3,
+      "graph_error_initial": 318706.17,
+      "graph_error_final": 39.855471,
+      "notes": "no RTK factor at all: IMU dead reckoning"
+    },
+    {
+      "name": "longgap_lio_rtk",
+      "ate_mean_m": 0.1234,
+      "ate_final_m": 0.0236,
+      "ate_rmse_m": 0.1775,
+      "rpe1_m": 0.0263,
+      "rpe5_m": 0.07,
+      "factors": {
+        "prior_pose": 1,
+        "lio_between": 153,
+        "rtk": 64
+      },
+      "converged": true,
+      "iterations": 4,
+      "graph_error_initial": 684.02,
+      "graph_error_final": 6.705076,
+      "notes": "RTK+LIO, 90-frame gap, no IMU",
+      "ate_in_outage_m": 0.1968,
+      "ate_out_of_outage_m": 0.0202
+    },
+    {
+      "name": "longgap_full",
+      "ate_mean_m": 0.1848,
+      "ate_final_m": 0.0309,
+      "ate_rmse_m": 0.2583,
+      "rpe1_m": 0.0356,
+      "rpe5_m": 0.0933,
+      "factors": {
+        "prior_pose": 1,
+        "prior_vel": 1,
+        "prior_bias": 1,
+        "lio_between": 153,
+        "imu": 153,
+        "bias_rw": 153,
+        "rtk": 64
+      },
+      "converged": true,
+      "iterations": 3,
+      "graph_error_initial": 319390.18,
+      "graph_error_final": 46.395413,
+      "notes": "RTK+LIO+IMU, same 90-frame gap",
+      "ate_in_outage_m": 0.2971,
+      "ate_out_of_outage_m": 0.0269
+    },
+    {
+      "name": "degen_no_imu",
+      "ate_mean_m": 0.2016,
+      "ate_final_m": 0.0229,
+      "ate_rmse_m": 0.4305,
+      "rpe1_m": 0.0386,
+      "rpe5_m": 0.1204,
+      "factors": {
+        "prior_pose": 1,
+        "lio_between": 123,
+        "rtk": 124
+      },
+      "converged": true,
+      "iterations": 4,
+      "graph_error_initial": 1197.62,
+      "graph_error_final": 7.201888,
+      "notes": "no LIO, no RTK in the window: graph interpolates",
+      "ate_in_outage_m": 0.9518,
+      "ate_out_of_outage_m": 0.0201
+    },
+    {
+      "name": "degen_imu",
+      "ate_mean_m": 0.0404,
+      "ate_final_m": 0.0313,
+      "ate_rmse_m": 0.0528,
+      "rpe1_m": 0.0315,
+      "rpe5_m": 0.049,
+      "factors": {
+        "prior_pose": 1,
+        "prior_vel": 1,
+        "prior_bias": 1,
+        "lio_between": 123,
+        "imu": 153,
+        "bias_rw": 153,
+        "rtk": 124
+      },
+      "converged": true,
+      "iterations": 4,
+      "graph_error_initial": 319903.79,
+      "graph_error_final": 52.613058,
+      "notes": "same window, IMU factor carries the motion",
+      "ate_in_outage_m": 0.0692,
+      "ate_out_of_outage_m": 0.0335
+    }
+  ],
+  "best": "graph_full"
+}

@@ -1,0 +1,37 @@
+{
+  "checkpoints": 154,
+  "zero_bias": {
+    "drift_mean_m": 26.762,
+    "drift_final_m": 56.135
+  },
+  "recovered_acc_bias": [
+    439.2989,
+    -464.2694,
+    11.84627
+  ],
+  "recovered_acc_bias_norm": 639.27297,
+  "after_bias_linear": {
+    "drift_mean_m": 53.059,
+    "drift_final_m": 108.798
+  },
+  "after_bias_reintegrated": {
+    "drift_mean_m": 26053.549,
+    "drift_final_m": 76699.552
+  },
+  "implied_tilt_deg": 88.938,
+  "gtsam_pim": {
+    "end_pos": [
+      15.163,
+      39.145,
+      -0.788
+    ],
+    "truth_end_pos": [
+      61.751,
+      7.83,
+      -0.375
+    ],
+    "err_m": 56.135,
+    "samples": 1574
+  },
+  "imu_hz": 100.0
+}

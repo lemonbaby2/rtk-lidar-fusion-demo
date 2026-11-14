@@ -1,0 +1,192 @@
+{
+  "z_stats": {
+    "ground_p2_m": -1.784,
+    "median_z_m": -1.593,
+    "band_point_pct": 31.1
+  },
+  "layers": [
+    {
+      "res_m": 1.0,
+      "stats": {
+        "res_m": 1.0,
+        "shape": [
+          209,
+          181
+        ],
+        "cells": 37829,
+        "free_cells": 2233,
+        "occupied_cells": 4711,
+        "unknown_cells": 30885,
+        "free_area_m2": 2233.0,
+        "occupied_area_m2": 4711.0,
+        "inflation_m": 0.6,
+        "z_band_m": [
+          0.2,
+          2.2
+        ],
+        "origins": 154,
+        "points_used": 1134570,
+        "ms": 1230.8
+      },
+      "occ_before_inflation_pct": 12.5,
+      "start_cell": [
+        67,
+        83
+      ],
+      "goal_cell": [
+        129,
+        91
+      ],
+      "ego_cells": 154,
+      "ego_isolated": 0,
+      "astar": {
+        "inflated_allow_unknown_True": {
+          "found": true,
+          "expanded": 94,
+          "ms": 0.56,
+          "len_m": 72.77
+        },
+        "inflated_allow_unknown_False": {
+          "found": true,
+          "expanded": 94,
+          "ms": 0.39,
+          "len_m": 72.77
+        },
+        "raw_allow_unknown_True": {
+          "found": true,
+          "expanded": 94,
+          "ms": 0.37,
+          "len_m": 72.77
+        },
+        "raw_allow_unknown_False": {
+          "found": true,
+          "expanded": 94,
+          "ms": 0.37,
+          "len_m": 72.77
+        }
+      }
+    },
+    {
+      "res_m": 0.5,
+      "stats": {
+        "res_m": 0.5,
+        "shape": [
+          406,
+          350
+        ],
+        "cells": 142100,
+        "free_cells": 7408,
+        "occupied_cells": 19834,
+        "unknown_cells": 114858,
+        "free_area_m2": 1852.0,
+        "occupied_area_m2": 4958.5,
+        "inflation_m": 0.6,
+        "z_band_m": [
+          0.2,
+          2.2
+        ],
+        "origins": 154,
+        "points_used": 1134570,
+        "ms": 1777.8
+      },
+      "occ_before_inflation_pct": 8.0,
+      "start_cell": [
+        130,
+        161
+      ],
+      "goal_cell": [
+        253,
+        177
+      ],
+      "ego_cells": 154,
+      "ego_isolated": 0,
+      "astar": {
+        "inflated_allow_unknown_True": {
+          "found": false,
+          "expanded": 95,
+          "ms": 0.44,
+          "len_m": null
+        },
+        "inflated_allow_unknown_False": {
+          "found": false,
+          "expanded": 95,
+          "ms": 0.37,
+          "len_m": null
+        },
+        "raw_allow_unknown_True": {
+          "found": false,
+          "expanded": 132,
+          "ms": 0.55,
+          "len_m": null
+        },
+        "raw_allow_unknown_False": {
+          "found": false,
+          "expanded": 132,
+          "ms": 0.55,
+          "len_m": null
+        }
+      }
+    },
+    {
+      "res_m": 0.25,
+      "stats": {
+        "res_m": 0.25,
+        "shape": [
+          801,
+          688
+        ],
+        "cells": 551088,
+        "free_cells": 30047,
+        "occupied_cells": 69417,
+        "unknown_cells": 451624,
+        "free_area_m2": 1877.9,
+        "occupied_area_m2": 4338.6,
+        "inflation_m": 0.6,
+        "z_band_m": [
+          0.2,
+          2.2
+        ],
+        "origins": 154,
+        "points_used": 1134570,
+        "ms": 1445.5
+      },
+      "occ_before_inflation_pct": 4.9,
+      "start_cell": [
+        255,
+        318
+      ],
+      "goal_cell": [
+        502,
+        350
+      ],
+      "ego_cells": 154,
+      "ego_isolated": 47,
+      "astar": {
+        "inflated_allow_unknown_True": {
+          "found": false,
+          "expanded": 1,
+          "ms": 0.02,
+          "len_m": null
+        },
+        "inflated_allow_unknown_False": {
+          "found": false,
+          "expanded": 1,
+          "ms": 0.01,
+          "len_m": null
+        },
+        "raw_allow_unknown_True": {
+          "found": false,
+          "expanded": 1,
+          "ms": 0.01,
+          "len_m": null
+        },
+        "raw_allow_unknown_False": {
+          "found": false,
+          "expanded": 1,
+          "ms": 0.01,
+          "len_m": null
+        }
+      }
+    }
+  ]
+}

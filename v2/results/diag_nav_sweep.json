@@ -1,0 +1,225 @@
+{
+  "pairs": [
+    [
+      37,
+      145
+    ],
+    [
+      5,
+      110
+    ],
+    [
+      23,
+      130
+    ],
+    [
+      38,
+      120
+    ],
+    [
+      1,
+      112
+    ],
+    [
+      23,
+      121
+    ],
+    [
+      46,
+      123
+    ],
+    [
+      32,
+      133
+    ],
+    [
+      0,
+      153
+    ],
+    [
+      77,
+      153
+    ]
+  ],
+  "grids": [
+    {
+      "label": "0.25m gate=none ego=0.0 infl=0.0",
+      "res_m": 0.25,
+      "max_occ_m": 1000000000.0,
+      "ego_radius_m": 0.0,
+      "inflation_m": 0.0,
+      "cells": 553956,
+      "free_pct": 6.36,
+      "occ_pct": 8.81,
+      "inflate_effective_m": 0.0,
+      "footprint_cells": 0,
+      "build_ms": 2239.0,
+      "astar_ok": "0/10",
+      "astar_ms_median": 1.4,
+      "expanded_median": 0,
+      "len_median_m": null
+    },
+    {
+      "label": "0.25m gate=30   ego=0.0 infl=0.0",
+      "res_m": 0.25,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.0,
+      "inflation_m": 0.0,
+      "cells": 553956,
+      "free_pct": 7.1,
+      "occ_pct": 6.84,
+      "inflate_effective_m": 0.0,
+      "footprint_cells": 0,
+      "build_ms": 2107.0,
+      "astar_ok": "0/10",
+      "astar_ms_median": 1.4,
+      "expanded_median": 0,
+      "len_median_m": null
+    },
+    {
+      "label": "0.25m gate=30   ego=0.4 infl=0.0",
+      "res_m": 0.25,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.4,
+      "inflation_m": 0.0,
+      "cells": 553956,
+      "free_pct": 7.24,
+      "occ_pct": 6.71,
+      "inflate_effective_m": 0.0,
+      "footprint_cells": 741,
+      "build_ms": 2110.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 3.1,
+      "expanded_median": 618,
+      "len_median_m": 44.82
+    },
+    {
+      "label": "0.25m gate=30   ego=0.8 infl=0.0",
+      "res_m": 0.25,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.8,
+      "inflation_m": 0.0,
+      "cells": 553956,
+      "free_pct": 7.4,
+      "occ_pct": 6.55,
+      "inflate_effective_m": 0.0,
+      "footprint_cells": 1625,
+      "build_ms": 2113.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 7.1,
+      "expanded_median": 1216,
+      "len_median_m": 44.51
+    },
+    {
+      "label": "0.25m gate=30   ego=0.0 infl=0.6",
+      "res_m": 0.25,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.0,
+      "inflation_m": 0.6,
+      "cells": 553956,
+      "free_pct": 3.58,
+      "occ_pct": 10.86,
+      "inflate_effective_m": 0.75,
+      "footprint_cells": 0,
+      "build_ms": 2129.0,
+      "astar_ok": "0/10",
+      "astar_ms_median": 1.4,
+      "expanded_median": 0,
+      "len_median_m": null
+    },
+    {
+      "label": "0.25m gate=30   ego=0.8 infl=0.6",
+      "res_m": 0.25,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.8,
+      "inflation_m": 0.6,
+      "cells": 553956,
+      "free_pct": 3.92,
+      "occ_pct": 10.52,
+      "inflate_effective_m": 0.75,
+      "footprint_cells": 1625,
+      "build_ms": 2153.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 6.9,
+      "expanded_median": 1203,
+      "len_median_m": 44.51
+    },
+    {
+      "label": "0.25m gate=50   ego=0.8 infl=0.6",
+      "res_m": 0.25,
+      "max_occ_m": 50.0,
+      "ego_radius_m": 0.8,
+      "inflation_m": 0.6,
+      "cells": 553956,
+      "free_pct": 2.96,
+      "occ_pct": 13.96,
+      "inflate_effective_m": 0.75,
+      "footprint_cells": 1630,
+      "build_ms": 2171.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 6.9,
+      "expanded_median": 1200,
+      "len_median_m": 44.51
+    },
+    {
+      "label": "1.00m gate=30   ego=0.8 infl=0.6",
+      "res_m": 1.0,
+      "max_occ_m": 30.0,
+      "ego_radius_m": 0.8,
+      "inflation_m": 0.6,
+      "cells": 38010,
+      "free_pct": 4.42,
+      "occ_pct": 9.96,
+      "inflate_effective_m": 1.0,
+      "footprint_cells": 74,
+      "build_ms": 1180.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 0.2,
+      "expanded_median": 52,
+      "len_median_m": 45.63
+    },
+    {
+      "label": "1.00m gate=none ego=0.8 infl=0.6",
+      "res_m": 1.0,
+      "max_occ_m": 1000000000.0,
+      "ego_radius_m": 0.8,
+      "inflation_m": 0.6,
+      "cells": 38010,
+      "free_pct": 2.87,
+      "occ_pct": 16.67,
+      "inflate_effective_m": 1.0,
+      "footprint_cells": 75,
+      "build_ms": 1203.0,
+      "astar_ok": "10/10",
+      "astar_ms_median": 0.2,
+      "expanded_median": 52,
+      "len_median_m": 45.63
+    },
+    {
+      "label": "1.00m gate=none ego=0.0 infl=0.6",
+      "res_m": 1.0,
+      "max_occ_m": 1000000000.0,
+      "ego_radius_m": 0.0,
+      "inflation_m": 0.6,
+      "cells": 38010,
+      "free_pct": 2.68,
+      "occ_pct": 16.87,
+      "inflate_effective_m": 1.0,
+      "footprint_cells": 0,
+      "build_ms": 1179.0,
+      "astar_ok": "2/10",
+      "astar_ms_median": 204.1,
+      "expanded_median": 31310,
+      "len_median_m": 224.54
+    }
+  ],
+  "ground_field": {
+    "res_m": 2.0,
+    "shape": [
+      104,
+      88
+    ],
+    "z_min": -2.361,
+    "z_max": 2.469
+  }
+}

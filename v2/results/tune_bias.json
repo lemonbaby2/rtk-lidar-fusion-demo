@@ -1,0 +1,187 @@
+{
+  "reference": {
+    "ate_mean": 0.0759,
+    "ate_in_gap": 0.1923,
+    "ate_out_gap": 0.02,
+    "long_ate_mean": 0.1234,
+    "long_in_gap": 0.1968
+  },
+  "sweep": [
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 0.05,
+      "ate_mean": 0.0862,
+      "ate_rmse": 0.1229,
+      "ate_in_gap": 0.1948,
+      "ate_out_gap": 0.034,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1848,
+      "long_in_gap": 0.2971
+    },
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 0.15,
+      "ate_mean": 0.0864,
+      "ate_rmse": 0.1235,
+      "ate_in_gap": 0.1957,
+      "ate_out_gap": 0.0339,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1847,
+      "long_in_gap": 0.297
+    },
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 0.3,
+      "ate_mean": 0.0867,
+      "ate_rmse": 0.1241,
+      "ate_in_gap": 0.1967,
+      "ate_out_gap": 0.0339,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1846,
+      "long_in_gap": 0.2968
+    },
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 0.6,
+      "ate_mean": 0.0869,
+      "ate_rmse": 0.1246,
+      "ate_in_gap": 0.1974,
+      "ate_out_gap": 0.0339,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1845,
+      "long_in_gap": 0.2967
+    },
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 1.0,
+      "ate_mean": 0.087,
+      "ate_rmse": 0.1247,
+      "ate_in_gap": 0.1976,
+      "ate_out_gap": 0.0338,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1844,
+      "long_in_gap": 0.2966
+    },
+    {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 2.0,
+      "ate_mean": 0.087,
+      "ate_rmse": 0.1248,
+      "ate_in_gap": 0.1977,
+      "ate_out_gap": 0.0338,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1844,
+      "long_in_gap": 0.2966
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 0.05,
+      "ate_mean": 0.0778,
+      "ate_rmse": 0.1081,
+      "ate_in_gap": 0.1671,
+      "ate_out_gap": 0.0349,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.1919,
+      "long_in_gap": 0.3078
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 0.15,
+      "ate_mean": 0.0792,
+      "ate_rmse": 0.1112,
+      "ate_in_gap": 0.1722,
+      "ate_out_gap": 0.0345,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.1924,
+      "long_in_gap": 0.3089
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 0.3,
+      "ate_mean": 0.0812,
+      "ate_rmse": 0.1155,
+      "ate_in_gap": 0.1791,
+      "ate_out_gap": 0.0342,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.1952,
+      "long_in_gap": 0.3138
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 0.6,
+      "ate_mean": 0.0829,
+      "ate_rmse": 0.1187,
+      "ate_in_gap": 0.1842,
+      "ate_out_gap": 0.0341,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.1985,
+      "long_in_gap": 0.3193
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 1.0,
+      "ate_mean": 0.0834,
+      "ate_rmse": 0.1197,
+      "ate_in_gap": 0.1859,
+      "ate_out_gap": 0.0341,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.1998,
+      "long_in_gap": 0.3215
+    },
+    {
+      "rotation_init": "accel",
+      "bias_sigma_acc": 2.0,
+      "ate_mean": 0.0837,
+      "ate_rmse": 0.1202,
+      "ate_in_gap": 0.1867,
+      "ate_out_gap": 0.0342,
+      "converged": true,
+      "iters": 5,
+      "long_ate_mean": 0.2004,
+      "long_in_gap": 0.3225
+    }
+  ],
+  "diagnosis": {
+    "no_imu_reference": {
+      "ate_mean": 0.0759,
+      "ate_in_gap": 0.1923,
+      "ate_out_gap": 0.02,
+      "long_ate_mean": 0.1234,
+      "long_in_gap": 0.1968
+    },
+    "best_by_long_gap": {
+      "rotation_init": "identity",
+      "bias_sigma_acc": 1.0,
+      "ate_mean": 0.087,
+      "ate_rmse": 0.1247,
+      "ate_in_gap": 0.1976,
+      "ate_out_gap": 0.0338,
+      "converged": true,
+      "iters": 4,
+      "long_ate_mean": 0.1844,
+      "long_in_gap": 0.2966
+    },
+    "tilt_estimates_deg": {
+      "whole_stream": 0.719,
+      "first_20_samples": 4.288,
+      "quietest_window": 7.039,
+      "note": "spread of 6 deg proves none of them isolates gravity on a moving platform; see module docstring"
+    },
+    "vehicle_never_stops": {
+      "min_speed_mps": 2.54,
+      "min_gyro_deg_s": 0.4,
+      "static_samples": 0
+    }
+  }
+}

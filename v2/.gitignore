@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+out/
+# 中间产物不入库；成片 navstack_v2.mp4 与抽帧 frames/ 入库（clone 即可查看）
+media/_raw.mp4
+web/*.f32
+web/*.u8

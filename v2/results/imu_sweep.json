@@ -1,0 +1,229 @@
+{
+  "rows": [
+    {
+      "acc": 0.05,
+      "gyro": 0.002,
+      "huber": 1.5,
+      "ate_mean": 0.1286,
+      "ate_final": 0.0106,
+      "ate_rmse": 0.1559,
+      "converged": true
+    },
+    {
+      "acc": 0.05,
+      "gyro": 0.002,
+      "huber": 3.0,
+      "ate_mean": 0.1289,
+      "ate_final": 0.0103,
+      "ate_rmse": 0.1562,
+      "converged": true
+    },
+    {
+      "acc": 0.05,
+      "gyro": 0.01,
+      "huber": 1.5,
+      "ate_mean": 0.1137,
+      "ate_final": 0.0358,
+      "ate_rmse": 0.1424,
+      "converged": true
+    },
+    {
+      "acc": 0.05,
+      "gyro": 0.01,
+      "huber": 3.0,
+      "ate_mean": 0.1146,
+      "ate_final": 0.0359,
+      "ate_rmse": 0.1435,
+      "converged": true
+    },
+    {
+      "acc": 0.05,
+      "gyro": 0.04,
+      "huber": 1.5,
+      "ate_mean": 0.1082,
+      "ate_final": 0.0452,
+      "ate_rmse": 0.1418,
+      "converged": true
+    },
+    {
+      "acc": 0.05,
+      "gyro": 0.04,
+      "huber": 3.0,
+      "ate_mean": 0.1089,
+      "ate_final": 0.0451,
+      "ate_rmse": 0.1422,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.002,
+      "huber": 1.5,
+      "ate_mean": 0.102,
+      "ate_final": 0.0253,
+      "ate_rmse": 0.1357,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.002,
+      "huber": 3.0,
+      "ate_mean": 0.1029,
+      "ate_final": 0.0254,
+      "ate_rmse": 0.1365,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.01,
+      "huber": 1.5,
+      "ate_mean": 0.1022,
+      "ate_final": 0.0356,
+      "ate_rmse": 0.138,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.01,
+      "huber": 3.0,
+      "ate_mean": 0.1031,
+      "ate_final": 0.0356,
+      "ate_rmse": 0.1388,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.04,
+      "huber": 1.5,
+      "ate_mean": 0.1005,
+      "ate_final": 0.0425,
+      "ate_rmse": 0.1408,
+      "converged": true
+    },
+    {
+      "acc": 0.15,
+      "gyro": 0.04,
+      "huber": 3.0,
+      "ate_mean": 0.1013,
+      "ate_final": 0.0425,
+      "ate_rmse": 0.1412,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.002,
+      "huber": 1.5,
+      "ate_mean": 0.093,
+      "ate_final": 0.031,
+      "ate_rmse": 0.1286,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.002,
+      "huber": 3.0,
+      "ate_mean": 0.0937,
+      "ate_final": 0.0311,
+      "ate_rmse": 0.1291,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.01,
+      "huber": 1.5,
+      "ate_mean": 0.0932,
+      "ate_final": 0.033,
+      "ate_rmse": 0.1301,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.01,
+      "huber": 3.0,
+      "ate_mean": 0.0939,
+      "ate_final": 0.033,
+      "ate_rmse": 0.1305,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.04,
+      "huber": 1.5,
+      "ate_mean": 0.094,
+      "ate_final": 0.037,
+      "ate_rmse": 0.1364,
+      "converged": true
+    },
+    {
+      "acc": 0.3,
+      "gyro": 0.04,
+      "huber": 3.0,
+      "ate_mean": 0.0947,
+      "ate_final": 0.0371,
+      "ate_rmse": 0.1365,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.002,
+      "huber": 1.5,
+      "ate_mean": 0.0874,
+      "ate_final": 0.0312,
+      "ate_rmse": 0.1238,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.002,
+      "huber": 3.0,
+      "ate_mean": 0.0877,
+      "ate_final": 0.0312,
+      "ate_rmse": 0.1239,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.01,
+      "huber": 1.5,
+      "ate_mean": 0.0862,
+      "ate_final": 0.0308,
+      "ate_rmse": 0.1229,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.01,
+      "huber": 3.0,
+      "ate_mean": 0.0865,
+      "ate_final": 0.0308,
+      "ate_rmse": 0.123,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.04,
+      "huber": 1.5,
+      "ate_mean": 0.0869,
+      "ate_final": 0.0319,
+      "ate_rmse": 0.1296,
+      "converged": true
+    },
+    {
+      "acc": 0.6,
+      "gyro": 0.04,
+      "huber": 3.0,
+      "ate_mean": 0.0872,
+      "ate_final": 0.0319,
+      "ate_rmse": 0.1296,
+      "converged": true
+    }
+  ],
+  "best": {
+    "acc": 0.6,
+    "gyro": 0.01,
+    "huber": 1.5,
+    "ate_mean": 0.0862,
+    "ate_final": 0.0308,
+    "ate_rmse": 0.1229,
+    "converged": true
+  }
+}
